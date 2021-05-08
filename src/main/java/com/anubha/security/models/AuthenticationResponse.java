@@ -1,12 +1,15 @@
 package com.anubha.security.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-@AllArgsConstructor
-public class AutenticationResponse {
+public class AuthenticationResponse {
     private final String jwt;
+
+    public AuthenticationResponse(String jwt) {
+        this.jwt = jwt;
+    }
+
 }
